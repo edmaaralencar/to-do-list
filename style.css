@@ -6,12 +6,12 @@ input[type=text],
 input[type=text]:focus {
   color: #fff;
   border: none;
-  background: rgba(0,0,0,0.2);
+  background: #1e2355;
   max-width: 400px;
 }
 
 .todos-container li {
-  background: #484E53;
+  background: #1e2355;
 }
 
 .delete {
@@ -20,4 +20,12 @@ input[type=text]:focus {
 
 .hidden {
   display: none;
+}
+
+.bg-color {
+  background: #a6a7bb;
+}
+
+.blue-color {
+  color: #151a53;
 }

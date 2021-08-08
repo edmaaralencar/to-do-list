@@ -44,12 +44,12 @@ const removeTodo = event => {
   }
 }
 
-const showFilteredTodos = todo => {
+const hideUnfilteredTodos = todo => {
   todo.classList.remove('d-flex')
   todo.classList.add('hidden')
 }
 
-const showRemainingTodos = todo => {
+const showUnfilteredTodos = todo => {
   todo.classList.remove('hidden')
   todo.classList.add('d-flex')
 }
@@ -63,11 +63,11 @@ const filterTodos = event => {
 
   todosContainerInArray
     .filter(todo => todoTextDoesntIncludeInputValue(todo))
-    .forEach(todo => showFilteredTodos(todo))
+    .forEach(todo => hideUnfilteredTodos(todo))
 
   todosContainerInArray
     .filter(todo => todoTextIncludeInputValue(todo))
-    .forEach(todo => showRemainingTodos(todo)) 
+    .forEach(todo => showUnfilteredTodos(todo)) 
 }
 
 formAddTodo.addEventListener('submit', addTodo)
