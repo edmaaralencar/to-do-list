@@ -4,17 +4,13 @@
 
 input[type=text],
 input[type=text]:focus {
-  color: #fff;
+  color: rgb(0, 0, 0);
   border: none;
-  background: #1e2355;
+  background: #C5C6DE;
   max-width: 400px;
 }
 
-.todos-container li {
-  background: #1e2355;
-}
-
-.delete {
+i {
   cursor: pointer;
 }
 
@@ -23,9 +19,23 @@ input[type=text]:focus {
 }
 
 .bg-color {
-  background: #a6a7bb;
+  background: #1E2355;
 }
 
 .blue-color {
-  color: #151a53;
+  color: #C5C6DE;
 }
+
+
+.list-group-item {
+  gap: 1rem;
+  background: #C5C6DE;
+  color: rgb(0, 0, 0);
+}
+
+span {
+  display: block;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
